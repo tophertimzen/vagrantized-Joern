@@ -8,14 +8,14 @@ Check [Virtualbox](https://www.virtualbox.org/wiki/Downloads) for information on
 
 ##Install Vagrant
 
-Check [VagrantUp](http://www.vagrantup.com/downloads) for information on installing vagrant.
+Check [VagrantUp](http://www.vagrantup.com/downloads.html) for information on installing vagrant.
 
 ##Fire up the VM
 
 1) 
 
 ```
-
+https://github.com/tophertimzen/vagrantized-Joern.git
 cd vagrantized-Joern
 mkdir codeDirectory
 vagrant up
@@ -24,7 +24,7 @@ vagrant ssh
 
 2)
 
-```bash
+```
 cd /opt/joern-0.3.1
 ant && ant tools
 ```
@@ -33,7 +33,7 @@ ant && ant tools
 
 codeDirectory should contain the code you want to perform static analysis on with Joern. 
 
-```bash
+```
 joern /home/vagrant/codeDirectory
 $Neo4jDir/bin/neo4j console &
 ```
@@ -54,7 +54,7 @@ $Neo4jDir/bin/neo4j console &
 
 Wait a minute and then
 
-```bash
+```
 python /home/vagrant/joernTest/test.py
 ```
 
