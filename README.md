@@ -25,7 +25,7 @@ vagrant ssh
 2)
 
 ```bash
-cd /opt/joern-0.3.1/bin/joern.jar
+cd /opt/joern-0.3.1
 ant && ant tools
 ```
 
