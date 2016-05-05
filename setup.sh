@@ -59,4 +59,5 @@ sudo python2 setup.py install
 
 #Setup Database
 sed -i 's/data\/graph.db/\/home\/vagrant\/.joernIndex\//g' /opt/neo4j-community-2.1.8/conf/neo4j-server.properties
+sed -i 's/#org.neo4j.server.webserver.address/org.neo4j.server.webserver.address/g' /opt/neo4j-community-2.1.8/conf/neo4j-server.properties
 echo "alias joernDB='$Neo4jDir/bin/neo4j console &'" >> ~/.aliases

@@ -15,7 +15,7 @@ Check [VagrantUp](http://www.vagrantup.com/downloads.html) for information on in
 1) 
 
 ```
-https://github.com/tophertimzen/vagrantized-Joern.git
+git clone https://github.com/tophertimzen/vagrantized-Joern.git
 cd vagrantized-Joern
 mkdir codeDirectory
 vagrant up
