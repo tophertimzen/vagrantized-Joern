@@ -28,7 +28,6 @@ tar xfzv 0.3.1.tar.gz
 cd joern-0.3.1
 wget http://mlsec.org/joern/lib/lib.tar.gz
 tar xfzv lib.tar.gz
-cd lib/
 sudo ant
 sudo ant tools
 echo "alias joern='java -jar /opt/joern-0.3.1/bin/joern.jar'" >> ~/.aliases
@@ -42,6 +41,13 @@ export Neo4jDir='/opt/neo4j-community-2.1.8/'
 echo "export Neo4jDir='/opt/neo4j-community-2.1.8/'" >> ~/.bashrc
 wget http://mlsec.org/joern/lib/neo4j-gremlin-plugin-2.1-SNAPSHOT-server-plugin.zip
 unzip neo4j-gremlin-plugin-2.1-SNAPSHOT-server-plugin.zip -d $Neo4jDir/plugins/gremlin-plugin
+
+#py2neo 2.0
+cd $INSTALLDIR
+wget https://github.com/nigelsmall/py2neo/archive/py2neo-2.0.tar.gz
+tar zxvf py2neo-2.0.tar.gz
+cd /opt/py2neo-py2neo-2.0
+sudo python2 setup.py install
 
 #Python-Joern
 cd $INSTALLDIR
